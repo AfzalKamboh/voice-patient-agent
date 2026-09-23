@@ -1,0 +1,28 @@
+[project]
+name = "voice-patient-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AfzalKamboh", email = "afzalkam011@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.115.0",
+    "httpx==0.27.2",
+    "pydantic[email]==2.9.2",
+    "pytest==8.3.3",
+    "python-dotenv==1.0.1",
+    "python-multipart==0.0.9",
+    "requests==2.32.3",
+    "sqlalchemy==2.0.35",
+    "twilio==9.3.5",
+    "uvicorn[standard]==0.30.6",
+]
+
+[project.scripts]
+voice-patient-agent = "voice_patient_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
